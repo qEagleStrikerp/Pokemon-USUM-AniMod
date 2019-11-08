@@ -45,7 +45,8 @@ If you want your rom as 3DS file (e.g. for playing on Citra):
 Now download HackingTool9DS from: https://github.com/Asia81/HackingToolkit9DS-Deprecated-/releases
 Navigate into ExtraTools and open "3DSBuilderMod.exe".
 Click "Open RomFS" and select the "romfs" folder in your game folder.
-Click "Open ExeFS" and select the "exefs" folder in your game folder. If you get asked to compress code.bin, select "No" (I am actually not 100% sure about that selection ... If you do select "Yes", it still works, but I don't know how it affects the game. If anyone knows, please contact me).
+Check the option "Use an ExeFS binary".
+Click "Open ExeFS" and select the "exefs.bin" folder in your game folder.
 Click "Open ExHeader" and select the "exheader.bin" in your game folder.
 Click "Save Location" and select your game folder; name the game however you want, e.g. "moonMod.3ds". It has to have a .3ds ending though.
 Hit "Go" and wait until everything is finished. Now you should have a fully working .3ds file!
