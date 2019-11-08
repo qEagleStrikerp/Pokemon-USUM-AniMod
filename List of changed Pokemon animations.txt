@@ -1,0 +1,47 @@
+00001: Bulbasaur
+00010: Ivysaur
+00019: Venusaur
+00028: Venusaur
+00037: Mega Venusaur
+00046: Charmander
+00055: Charmeleon
+00064: Charizard
+00073: Mega Charizard X
+00082: Mega Charizard Y
+00091: Squirtle
+00109: Blastoise
+00118: Mega Blastoise
+00136: Metapod
+00172: Kakuna
+00190: Mega Beedrill
+00226: Mega Pidgeot
+00253: Alolan Rattata
+00280: Alolan Raticate
+00415: Raichu
+00424: Raichu
+00433: Alolan Raichu
+00532: Clefairy
+00550: Vulpix
+00559: Alolan Vulpix
+00568: Ninetales
+00577: Alolan Ninetales
+00586: Jigglypuff
+00685: Paras
+00784: Alolan Persian
+00901: Alakazam
+00919: Mega Alakazam
+00928: Machop
+00937: Machoke
+00946: Machamp
+01081: Slowbro
+01090: Mega Slowbro
+01099: Magnemite
+01252: Gengar
+01324: Voltorb
+01369: Cubone
+01378: Marowak
+01576: Staryu
+01585: Starmie
+01720: Lapras
+01837: Snorlax
+01900: Mewtwo
