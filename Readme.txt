@@ -1,7 +1,12 @@
 @Pokemon Ultra Sun and Ultra Moon Animation Modifier
-@Version 0.1
+@Version 0.2
 @Copyright qEagleStrikerp, 05.11.2019
 @Tutorial for Windows. Other OSes seem not to work at the time, for certain programs are not available on those platforms
+
+--- Version changes ---
+-> Now Amie animations can be used
+-> Also, you can copy animations to different locations than only the idle (important for mons like Salamence: In order to get it to the ground, you have to replace all animations)
+-> Since this is now possible, it is advisable to redo all of Gen 1 to see if there are Amie animations fitting to replace the idle. At the moment, this is not done yet.
 
 1. Info
 This mod currently replaces animations for any Pokemon and form of the 1st Generation. I may do the other Gens as well if the demand is high enough.
@@ -30,8 +35,8 @@ Now in your game folder, go to romfs/a/0/9/. Inside, there should be files from 
 This is where the files included in this ZIP will come into action. Drag "AnimationModifier.py" and "data.json" into the folder that was just created. Then right-click on AnimationModifier.py and select "Edit with IDLE" (Warning: If you have Python 2 installed alongside Python 3, due to Python 2 and Python 3 behaving differently, you will probably have two options for Editing with IDLE; one with a submenu and one without. In this case, select the one with submenu and then select "Edit with IDLE 3.7"). Once IDLE has opened the file, hit F5 once to start the process. It should finish pretty quickly. If no error gets thrown, everything worked just fine! Afterwards, delete "AnimationModifier.py" and "data.json" from the folder. This is very important!
 
 4.5 (For Advanced users who want to edit animations on their own)
-If you want to edit animations on your own, you will need to download Notepad++ (https://notepad-plus-plus.org/) and Ohana3DS (https://github.com/gdkchan/Ohana3DS-Rebirth). Now load up any Pokemon data you want (file 1 is always the model, file 2 the textures, file 3 the shiny textures and file 5 the animations) in Ohana. Look through the animations and once you have found the one you want to use instead of the idle animation, note the position of the animation. Now open up data.json with Notepad++. Navigate to the name of the animation file you are currently looking up. Every file is associated with a number. If this number is 0, then no changes will take effect. If the number is 2 or higher, that respective animation will replace the idle animation (which sits at position 1). If you decide to go for the second animation, it will always work. If you want to use another animation, though, it sometimes can happen that the wrong animation is chosen (e.g. you want to take animation #6 and if you run the program, the idle gets replaced with #5). In that case, try increasing the number by one enough times so that the correct animation will be loaded.
-With that knowledge, you can replace the idle animation of any Pokemon by changing the value associated with its file in the data.json.
+If you want to edit animations on your own, you will need to download Notepad++ (https://notepad-plus-plus.org/) and Ohana3DS (https://github.com/gdkchan/Ohana3DS-Rebirth). Now load up any Pokemon data you want (file 1 is always the model, file 2 the textures, file 3 the shiny textures, file 5 the battle animations and file 6 the Amie animations) in Ohana. Look through the animations and once you have found the one you want to use instead of the idle animation, note the position of the animation. Now open up data.json with Notepad++. Navigate to the name of the animation file you are currently looking up. Every file is associated with three numbers. The first number is position of the normal animation from file 5, the second number the position of the amie animation from file 6, and the third number say to which position in file 5 the animation gets copied. For example "3, 0, 1" means that the first animation in file 5 will be replaced by the third animation in file 5. "0, 5, 2" means that the second animation in file 5 will be replaced by the fifth Amie animation from file 6. If there's a number for both a normal and a Amie animation, the program will always take the Amie animation. If the third number is 0, nothing will happen. Note though that the position of the animations differ greatly from file to file. If you want to use the fifth animation, you sometimes have to choose a number like "12" instead. So try around and increase the numbers by one until the right animation is chosen. If you want to see how it works, look up Salamence in the data.json (04748.bin).
+With that knowledge, you can replace any animation of any Pokemon by changing the values associated with its file in the data.json.
 If you decide to do more than just a few Pokemon, consider committing the updated data.json to the GitHub of this project!
 
 5. Repacking the animation files

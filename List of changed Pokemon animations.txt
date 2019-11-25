@@ -45,3 +45,8 @@
 01720: Lapras
 01837: Snorlax
 01900: Mewtwo
+04519: Kecleon
+04744: Salamence
+04780: Metagross
+04789: Mega Metagross
+04934: Deoxys (Attack Form)
